@@ -1,10 +1,11 @@
-﻿using A01_SRP_Solucao.Models;
-using A01_SRP_Solucao.Views;
+﻿using A02_OCP_Solucao.Models;
+using A02_OCP_Solucao.Views;
+using A02_OCP_Solucao.Views.Contas;
 using System;
 
-namespace A01_SRP_Solucao
+namespace A02_OCP_Solucao
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -20,11 +21,11 @@ namespace A01_SRP_Solucao
 
         private static Conta RetornarConta(Correntista joao)
         {
-            return new Conta
+            return new ContaMesada
             {
                 Numero = "123",
                 Correntista = joao,
-                Limite = 1000
+                ValorMaximoSaque = 100
             };
         }
 

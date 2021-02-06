@@ -1,3 +1,3 @@
 # TreinamentoMS3
 
-Códigos relacionados ao terceiro trabalho do treinamento da Manager Saúde.
+Códigos relacionados ao terceiro treinamento da Manager Saúde.

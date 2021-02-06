@@ -1,10 +1,16 @@
-﻿using A01_SRP_Solucao.Models;
-using A01_SRP_Solucao.Views;
+﻿using A02_OCP_Solucao.Models;
+using A02_OCP_Solucao.Views;
 using System;
 
-namespace A01_SRP_Solucao
+/*
+    ATENÇÃO: esse código está propositalmente ruim.
+    Você deve tentar melhorá-lo utilizando para isso 
+    o princípio OCP.
+*/
+
+namespace A02_OCP_Problema
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -24,7 +30,8 @@ namespace A01_SRP_Solucao
             {
                 Numero = "123",
                 Correntista = joao,
-                Limite = 1000
+                ValorMaximoSaque = 100,
+                Tipo = ETipoConta.Conta_Mesada
             };
         }
 
