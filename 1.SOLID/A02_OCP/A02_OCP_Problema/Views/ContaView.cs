@@ -12,8 +12,9 @@ namespace A02_OCP_Solucao.Views
         public void Apresentar()
         {
             int opcao = LeOpcao();
+            const int SAIR = 9;
 
-            while (opcao != 9)
+            while (opcao != SAIR)
             {
                 switch (opcao)
                 {
