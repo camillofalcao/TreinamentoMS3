@@ -1,18 +1,26 @@
-﻿using A02_OCP_Problema.Models;
-using A02_OCP_Problema.Views;
+﻿using A04_ISP_Problema.Models;
+using A04_ISP_Problema.Views;
+using A04_ISP_Problema.Views.Contas;
 using System;
+using System.Collections.Generic;
 
-namespace A02_OCP_Problema
+/*
+    Altere esse programa de forma que o mesmo fique em acordo
+    com o princípio ISP.
+*/
+
+namespace A04_ISP_Problema
 {
     public class Program
     {
         static void Main(string[] args)
         {
             Correntista joao = RetornarCorrentista();
+
             Conta conta = RetornarConta(joao);
 
-            var viewConta = new ContaView(conta);
-            viewConta.Apresentar();
+            var viewConta = new ContaView();
+            viewConta.Apresentar(conta);
 
             Console.WriteLine("Fim do programa. Tecle <Enter> para sair.");
             Console.ReadKey();
@@ -20,12 +28,11 @@ namespace A02_OCP_Problema
 
         private static Conta RetornarConta(Correntista joao)
         {
-            return new Conta
+            return new ContaMesada
             {
                 Numero = "123",
                 Correntista = joao,
-                ValorMaximoSaque = 100,
-                Tipo = ETipoConta.Conta_Mesada
+                ValorMaximoSaque = 100
             };
         }
 

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A04_ISP_Problema", "A04_ISP_Problema\A04_ISP_Problema.csproj", "{20001A37-C762-46CD-8A64-5F0FE2AC0DDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A04_ISP_Solucao", "A04_ISP_Solucao\A04_ISP_Solucao.csproj", "{672599E1-44B7-44D8-A3B1-9D42F3180534}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20001A37-C762-46CD-8A64-5F0FE2AC0DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20001A37-C762-46CD-8A64-5F0FE2AC0DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20001A37-C762-46CD-8A64-5F0FE2AC0DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20001A37-C762-46CD-8A64-5F0FE2AC0DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{672599E1-44B7-44D8-A3B1-9D42F3180534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672599E1-44B7-44D8-A3B1-9D42F3180534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672599E1-44B7-44D8-A3B1-9D42F3180534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672599E1-44B7-44D8-A3B1-9D42F3180534}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {135D2E9E-2B3D-43EC-9E3F-5C50C5479EE1}
+	EndGlobalSection
+EndGlobal

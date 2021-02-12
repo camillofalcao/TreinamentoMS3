@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace A02_OCP_Problema.Models
+namespace A03_LSP_Problema.Models
 {
     public class Correntista
     {

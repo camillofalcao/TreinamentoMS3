@@ -1,8 +1,9 @@
-﻿using A02_OCP_Problema.Models;
-using A02_OCP_Problema.Views;
+﻿using A03_LSP_Problema.Models;
+using A03_LSP_Problema.Views;
+using A03_LSP_Problema.Views.Contas;
 using System;
 
-namespace A02_OCP_Problema
+namespace A03_LSP_Problema
 {
     public class Program
     {
@@ -11,8 +12,8 @@ namespace A02_OCP_Problema
             Correntista joao = RetornarCorrentista();
             Conta conta = RetornarConta(joao);
 
-            var viewConta = new ContaView(conta);
-            viewConta.Apresentar();
+            var viewConta = new ContaView();
+            viewConta.Apresentar(conta);
 
             Console.WriteLine("Fim do programa. Tecle <Enter> para sair.");
             Console.ReadKey();
@@ -20,12 +21,11 @@ namespace A02_OCP_Problema
 
         private static Conta RetornarConta(Correntista joao)
         {
-            return new Conta
+            return new ContaMesada
             {
                 Numero = "123",
                 Correntista = joao,
-                ValorMaximoSaque = 100,
-                Tipo = ETipoConta.Conta_Mesada
+                ValorMaximoSaque = 100
             };
         }
 

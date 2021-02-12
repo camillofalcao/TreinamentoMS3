@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace A02_OCP_Solucao.Models
+namespace A02_OCP_Problema.Models
 {
     public class Conta
     {

@@ -1,6 +1,13 @@
 ﻿using A02_OCP_Problema.Models;
 using A02_OCP_Problema.Views;
+using A02_OCP_Problema.Views.Contas;
 using System;
+
+/*
+    ATENÇÃO: esse código está propositalmente ruim.
+    Você deve tentar melhorá-lo utilizando para isso 
+    o princípio OCP.
+*/
 
 namespace A02_OCP_Problema
 {
@@ -20,12 +27,11 @@ namespace A02_OCP_Problema
 
         private static Conta RetornarConta(Correntista joao)
         {
-            return new Conta
+            return new ContaMesada
             {
                 Numero = "123",
                 Correntista = joao,
-                ValorMaximoSaque = 100,
-                Tipo = ETipoConta.Conta_Mesada
+                ValorMaximoSaque = 100
             };
         }
 

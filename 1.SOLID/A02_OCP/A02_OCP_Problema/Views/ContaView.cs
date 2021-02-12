@@ -1,9 +1,9 @@
-﻿using A02_OCP_Solucao.Models;
+﻿using A02_OCP_Problema.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace A02_OCP_Solucao.Views
+namespace A02_OCP_Problema.Views
 {
     public class ContaView
     {
@@ -12,9 +12,8 @@ namespace A02_OCP_Solucao.Views
         public void Apresentar()
         {
             int opcao = LeOpcao();
-            const int SAIR = 9;
 
-            while (opcao != SAIR)
+            while (opcao != 9)
             {
                 switch (opcao)
                 {
